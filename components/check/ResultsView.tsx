@@ -124,7 +124,7 @@ export function ResultsView({ scan }: ResultsViewProps) {
           <h2 className="text-white font-bold text-base">Platform Breakdown</h2>
           <span className="text-zinc-600 text-xs">AI-estimated</span>
         </div>
-        <div className="space-y-2">
+        <div className="grid grid-cols-2 gap-3">
           {MARKETPLACES.map((marketplace) => {
             const key = marketplace.key as keyof typeof result.marketplace_estimates
             const estimate = result.marketplace_estimates[key]
