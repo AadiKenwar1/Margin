@@ -52,17 +52,17 @@ export function CategorySelect({ onSelect }: CategorySelectProps) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
-          <div className="mt-4 flex items-center gap-2">
+          <div className="mt-4 flex flex-wrap items-center gap-2">
             {[
               { key: 'grailed', name: 'Grailed' },
               { key: 'depop', name: 'Depop' },
               { key: 'ebay', name: 'eBay' },
               { key: 'mercari', name: 'Mercari' },
-              { key: 'facebook_marketplace', name: 'FB Mkt' },
+              { key: 'facebook_marketplace', name: 'FB Marketplace' },
             ].map((m) => (
               <div key={m.key} className="flex items-center gap-1 bg-zinc-800 px-2 py-1 rounded-lg">
                 <MarketplaceLogo marketplaceKey={m.key} size={14} />
-                <span className="text-zinc-500 text-xs">{m.name}</span>
+                <span className="text-zinc-500 text-xs whitespace-nowrap">{m.name}</span>
               </div>
             ))}
           </div>
@@ -93,17 +93,17 @@ export function CategorySelect({ onSelect }: CategorySelectProps) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
-          <div className="mt-4 flex items-center gap-2">
+          <div className="mt-4 flex flex-wrap items-center gap-2">
             {[
               { key: 'stockx', name: 'StockX' },
               { key: 'ebay', name: 'eBay' },
               { key: 'grailed', name: 'Grailed' },
               { key: 'mercari', name: 'Mercari' },
-              { key: 'facebook_marketplace', name: 'FB Mkt' },
+              { key: 'facebook_marketplace', name: 'FB Marketplace' },
             ].map((m) => (
               <div key={m.key} className="flex items-center gap-1 bg-zinc-800 px-2 py-1 rounded-lg">
                 <MarketplaceLogo marketplaceKey={m.key} size={14} />
-                <span className="text-zinc-500 text-xs">{m.name}</span>
+                <span className="text-zinc-500 text-xs whitespace-nowrap">{m.name}</span>
               </div>
             ))}
           </div>
